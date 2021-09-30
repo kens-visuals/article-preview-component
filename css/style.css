@@ -78,7 +78,7 @@ body {
     font-size: 1.27rem;
     font-weight: 700;
     line-height: 1.6;
-    margin-bottom: 3rem; }
+    margin-bottom: 4rem; }
     @media (min-width: 768px) {
       .card__description {
         margin-bottom: 2rem; } }
@@ -103,46 +103,53 @@ body {
       font-family: "Manrope", sans-serif; }
     .card__info-container {
       width: 100%;
-      height: 12%;
+      height: 7.5rem;
       background-color: #48556a;
       position: absolute;
       bottom: 0;
       left: 0;
-      padding: 1rem;
+      padding: 1rem 1rem 0 1rem;
       display: flex;
       align-items: center;
       justify-content: space-around; }
+      .card__info-container--active {
+        display: none; }
     .card__info-text {
       color: #9eafc2;
       text-transform: uppercase;
       letter-spacing: 0.5rem;
-      font-size: 1.3rem; }
+      font-size: 1.3rem;
+      margin-bottom: 1.6rem; }
     .card__info-icons {
       fill: #ecf2f8;
-      margin: 0.4rem 0 0 -4rem; }
+      margin: 0.4rem 0 1.6rem -4rem; }
       .card__info-icons > *:hover {
         fill: #9eafc2;
         transition: all 0.3s; }
     .card__info-icon {
-      margin-left: 1.2rem; }
-      .card__info-icon--share {
+      margin-left: 1.4rem; }
+      .card__info-icon-share {
         fill: #6d7f97;
         background-color: #ecf2f8;
         padding: 0.4rem 0.8rem;
         border-radius: 50%; }
-        .card__info-icon--share:hover {
+        .card__info-icon-share:hover {
           fill: #ecf2f8;
           background-color: #6d7f97;
           transition: all 0.3s; }
-        .card__info-icon--share--active {
+        .card__info-icon-share--active {
           fill: #ecf2f8;
           background-color: #6d7f97;
           padding: 0.4rem 0.8rem;
+          margin-bottom: 1.6rem;
           border-radius: 50%; }
-          .card__info-icon--share--active:hover {
+          .card__info-icon-share--active:hover {
             fill: #9eafc2;
             background-color: #ecf2f8;
             transition: all 0.3s; }
+
+.js-animatie-container {
+  animation: fadeIn 0.3s ease-in-out alternate; }
 
 .attribution {
   font-size: 1rem;
@@ -154,3 +161,9 @@ body {
     transition: all 0.2s; }
   .attribution__link:hover, .attribution__link:active {
     color: #9eafc2; }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }

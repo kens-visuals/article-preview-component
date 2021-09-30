@@ -17,6 +17,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script defer src="script.js"></script>
 
     <title>Frontend Mentor | Article Preview Component</title>
   </head>
@@ -24,9 +25,7 @@
     <main class="main">
       <div class="container">
         <figure class="card">
-          <div class="card__hero">
-            <!-- <img src="./images/drawers.jpg" alt="drawers" class="card__img" /> -->
-          </div>
+          <div class="card__hero"></div>
 
           <div class="card__content">
             <h1 class="card__heading">
@@ -89,9 +88,13 @@
                     </svg>
                   </a>
                 </div>
+
                 <a
                   href="#"
-                  class="card__info-icon card__info-icon--share--active"
+                  class="
+                    card__info-icon card__info-icon-share--active
+                    js-share-icon
+                  "
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -105,7 +108,10 @@
                 </a>
               </div>
 
-              <a href="#" class="card__info-icon card__info-icon--share">
+              <a
+                href="#"
+                class="card__info-icon card__info-icon-share js-share-icon"
+              >
                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13">
                   <path
                     d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"
