@@ -145,14 +145,16 @@ body {
       font-size: 1.3rem;
       margin-bottom: 1.6rem; }
     .card__info-icons {
-      fill: #ecf2f8;
       margin: 0.4rem 0 1.6rem -4rem; }
+      .card__info-icons svg {
+        fill: #ecf2f8; }
+        @media (min-width: 768px) {
+          .card__info-icons svg:hover {
+            fill: #9eafc2;
+            transition: all 0.3s; } }
       @media (min-width: 768px) {
         .card__info-icons {
           margin: 0.4rem 0 1.8rem -2.5rem; } }
-      .card__info-icons > *:hover {
-        fill: #9eafc2;
-        transition: all 0.3s; }
     .card__info-icon {
       margin-left: 1.4rem; }
       .card__info-icon-share {

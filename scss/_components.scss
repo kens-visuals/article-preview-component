@@ -147,16 +147,21 @@
     }
 
     &-icons {
-      fill: $color-secondary;
       margin: 0.4rem 0 1.6rem -4rem;
+
+      & svg {
+        fill: $color-secondary;
+
+        @media (min-width: 768px) {
+          &:hover {
+            fill: $color-primary--light;
+            transition: all 0.3s;
+          }
+        }
+      }
 
       @media (min-width: 768px) {
         margin: 0.4rem 0 1.8rem -2.5rem;
-      }
-
-      & > *:hover {
-        fill: $color-primary--light;
-        transition: all 0.3s;
       }
     }
 
@@ -197,6 +202,7 @@
 .js-share-icon--active {
   @media (min-width: 768px) {
     fill: $color-secondary;
+
     background-color: $color-primary--dark;
   }
 }
