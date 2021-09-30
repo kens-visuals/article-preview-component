@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://www.frontendmentor.io/solutions/article-preview-comp-with-bem-sass-and-vanilla-js-vtLeoLZH4](https://www.frontendmentor.io/solutions/article-preview-comp-with-bem-sass-and-vanilla-js-vtLeoLZH4)
 - Live Site URL: [https://kens-visuals.github.io/article-preview-component/#](https://kens-visuals.github.io/article-preview-component/#)
+- Solution URL: [https://www.frontendmentor.io/solutions/article-preview-comp-with-bem-sass-and-vanilla-js-vtLeoLZH4](https://www.frontendmentor.io/solutions/article-preview-comp-with-bem-sass-and-vanilla-js-vtLeoLZH4)
 
 ## My process
 
