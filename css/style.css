@@ -10,8 +10,7 @@ html {
   box-sizing: border-box; }
 
 body {
-  width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   font-size: 1.6rem;
   font-family: "Manrope", sans-serif;
   background-color: #ecf2f8;
@@ -42,11 +41,7 @@ body {
   @media (min-width: 768px) {
     .card {
       max-width: 75rem;
-      flex-direction: row;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%); } }
+      flex-direction: row; } }
   .card__hero {
     width: 100%;
     height: 21rem;
@@ -151,13 +146,15 @@ body {
         @media (min-width: 768px) {
           .card__info-icons svg:hover {
             fill: #9eafc2;
-            transition: all 0.3s; } }
+            transition: all 0.2s; } }
       @media (min-width: 768px) {
         .card__info-icons {
           margin: 0.4rem 0 1.8rem -2.5rem; } }
     .card__info-icon {
       margin-left: 1.4rem; }
       .card__info-icon-share {
+        height: 3rem;
+        border: 0;
         fill: #6d7f97;
         background-color: #ecf2f8;
         padding: 0.4rem 0.8rem;
@@ -167,8 +164,10 @@ body {
           .card__info-icon-share:hover {
             fill: #ecf2f8;
             background-color: #6d7f97;
-            transition: all 0.3s; } }
+            transition: all 0.2s; } }
         .card__info-icon-share--active {
+          height: 3rem;
+          border: 0;
           fill: #ecf2f8;
           background-color: #6d7f97;
           padding: 0.4rem 0.8rem;
